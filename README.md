@@ -104,4 +104,11 @@ backend/
 │   ├── validateUser.js      # User data validation
 │   └── validateTask.js      # Task data validation
 ```
+
+## 📚 API Documentation
+
+The API documentation is available through Swagger UI at:
+```
+http://localhost:3000/api-docs/#/
+```
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
