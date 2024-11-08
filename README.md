@@ -92,7 +92,7 @@ The backend is built with Node.js and Express, handling all API requests and bus
 ### 📂 Detailed Folder Structure
 
 ```
-backend/src
+Backend/src
 ├── models/
 │   ├── User.js              # User schema definition
 │   └── Task.js              # Task schema definition
