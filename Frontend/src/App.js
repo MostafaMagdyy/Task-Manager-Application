@@ -37,13 +37,13 @@ const App = () => {
   const handleAuth = (newToken) => {
     setToken(newToken);
     localStorage.setItem('token', newToken);
-    fetchTasks(); // Fetch tasks after login/signup
+    fetchTasks(); 
   };
 
   const handleLogout = () => {
     setToken(null);
     localStorage.removeItem('token');
-    setTasks([]); // Clear tasks on logout
+    setTasks([]);
   };
 
   const handleTaskAdded = (newTask) => {

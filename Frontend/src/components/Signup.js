@@ -5,11 +5,11 @@ const Signup = ({ onSignup }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState(''); // State for error messages
+  const [error, setError] = useState(''); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(''); // Clear previous errors
+    setError(''); 
     try {
       const response = await fetch('http://localhost:3000/users', {
         method: 'POST',
@@ -27,7 +27,7 @@ const Signup = ({ onSignup }) => {
       const data = await response.json();
       onSignup(data.token);
     } catch (error) {
-      setError(error.message); // Set error message
+      setError(error.message); 
     }
   };
 
@@ -36,7 +36,7 @@ const Signup = ({ onSignup }) => {
       <Typography variant="h4" component="h1" gutterBottom>
         Sign Up
       </Typography>
-      {error && <Alert severity="error">{error}</Alert>} {/* Display error message */}
+      {error && <Alert severity="error">{error}</Alert>} 
       <form onSubmit={handleSubmit}>
         <TextField
           label="Name"

@@ -4,11 +4,11 @@ import { TextField, Button, Container, Typography, Alert } from '@mui/material';
 const Login = ({ onLogin }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState(''); // State for error messages
+  const [error, setError] = useState(''); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(''); // Clear previous errors
+    setError('');
     try {
       const response = await fetch('http://localhost:3000/users/login', {
         method: 'POST',
@@ -26,7 +26,7 @@ const Login = ({ onLogin }) => {
       const data = await response.json();
       onLogin(data.token);
     } catch (error) {
-      setError(error.message); // Set error message
+      setError(error.message); 
     }
   };
 
@@ -35,7 +35,7 @@ const Login = ({ onLogin }) => {
       <Typography variant="h4" component="h1" gutterBottom>
         Log In
       </Typography>
-      {error && <Alert severity="error">{error}</Alert>} {/* Display error message */}
+      {error && <Alert severity="error">{error}</Alert>} 
       <form onSubmit={handleSubmit}>
         <TextField
           label="Email"
