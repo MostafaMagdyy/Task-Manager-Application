@@ -53,7 +53,7 @@ cd Task-Manager-Application
 #### 2. Backend Setup
 ```bash
 # Navigate to backend directory
-cd backend
+cd Backend
 
 # Install dependencies
 npm install
@@ -70,7 +70,7 @@ node index.js
 #### 3. Frontend Setup
 ```bash
 # Navigate to frontend directory
-cd frontend
+cd Frontend
 
 # Install dependencies
 npm install
@@ -92,7 +92,7 @@ The backend is built with Node.js and Express, handling all API requests and bus
 ### 📂 Detailed Folder Structure
 
 ```
-backend/
+Backend/src
 ├── models/
 │   ├── User.js              # User schema definition
 │   └── Task.js              # Task schema definition
@@ -103,5 +103,12 @@ backend/
 │   ├── auth.js              # JWT authentication middleware
 │   ├── validateUser.js      # User data validation
 │   └── validateTask.js      # Task data validation
+```
+
+## 📚 API Documentation
+
+The API documentation is available through Swagger UI at:
+```
+http://localhost:3000/api-docs/#/
 ```
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
