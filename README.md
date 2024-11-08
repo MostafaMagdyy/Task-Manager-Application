@@ -53,7 +53,7 @@ cd Task-Manager-Application
 #### 2. Backend Setup
 ```bash
 # Navigate to backend directory
-cd backend
+cd Backend
 
 # Install dependencies
 npm install
@@ -70,7 +70,7 @@ node index.js
 #### 3. Frontend Setup
 ```bash
 # Navigate to frontend directory
-cd frontend
+cd Frontend
 
 # Install dependencies
 npm install
@@ -92,7 +92,7 @@ The backend is built with Node.js and Express, handling all API requests and bus
 ### 📂 Detailed Folder Structure
 
 ```
-backend/
+backend/src
 ├── models/
 │   ├── User.js              # User schema definition
 │   └── Task.js              # Task schema definition
